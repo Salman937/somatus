@@ -16,6 +16,10 @@ body
     color: white;
     font-size: 16px;
 }
+.navbar-nav>li:nth-child(1)
+{
+    border-left:1px solid #005580;
+}
 .nav>li>a {
     position: relative;
     display: block;
@@ -42,6 +46,14 @@ body
     padding:0px 17px !important;
     margin-top: 0.3em;
 }
+.nav-btn:hover
+{
+    background-color: white !important;
+}
+.nav-btn:focus
+{
+    background-color: white !important;
+}
 .help-text
 {
     display: block;
@@ -53,6 +65,10 @@ body
 .nav-img
 {
     padding-top: 0.3em;
+}
+.information-label
+{
+    width: 11%;
 }
 
 /* content start */
@@ -152,7 +168,7 @@ footer
     overflow:auto;
 }
 .assessment-form::-webkit-scrollbar {
-    width: 0.2em;
+    width: 0.5em;
 }
 .assessment-form::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -182,5 +198,15 @@ footer
   .created-by
   {
       padding-left: 2.2em;
+  }
+  .important-info
+  {
+      height: auto;
+      width: 85%;
+      border:1px solid #888787;
+      /* margin-left: 30%; */
+      margin-top: 1em;
+      padding-left: 2em;
+      float:right;
   }
 

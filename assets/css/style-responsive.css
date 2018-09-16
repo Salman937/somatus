@@ -1,0 +1,272 @@
+@media only screen and (max-width : 1200px) 
+{
+
+    .navbar-default .navbar-nav>li>a 
+    {
+        font-size: 14px;
+    }
+    .nav>li>a 
+    {
+        padding: 16px 10px;
+    }
+    .navbar-form .input-group 
+    {
+        margin-right: -6em;
+        width: 110%;
+    }
+    .nav-btn
+    {
+        padding:0px 6px !important;
+        font-size: 13px !important;
+    }
+    .help-text
+    {
+        font-size: 9px;
+    }
+    .information-label
+    {
+        width: 14%;
+    } 
+    .tile-footer
+    {
+        width: 89%;
+    }       
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) 
+{
+    /* Collapse Navbar in medium screen */
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+    .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        color: white;
+    }
+    .navbar-nav .open .dropdown-menu>li>a {
+        color: white;
+        text-align: center
+    }
+    .navbar-nav .open .dropdown-menu>li>a:hover {
+        background-color: #005580;
+        color: white;
+    }
+
+    /* Navbar collapse end  */
+
+    .nav>li>a 
+    {
+        border:none;
+        border-bottom: thin solid #005580;
+        text-align: center;
+    }
+    .navbar-form .input-group 
+    {
+        margin-right: 0em;
+        width: 0%;
+    }
+    .nav form 
+    {
+        text-align: center;
+    }
+    .navbar-nav>li:nth-child(1)
+    {
+        border-left:none;
+    }
+    .nav-btn
+    {
+       margin-top: 0.9em;
+       width: 30%;
+       margin-left: 35%;
+       font-size: 16px !important;
+    }
+    .help-text
+    {
+        font-size: 10px;
+    }
+    .information-label
+    {
+        width: 18%;
+    } 
+    .patients
+    {
+        margin-top: 2em;
+    }
+    .alert-patients
+    {
+        margin-top: 2em;
+    }
+    .tile-footer
+    {
+        width: 93.5%;
+    }
+    .patient-info
+    {
+        text-align: center;
+    }
+    .patient-icons
+    {
+        text-align: center;
+    }
+
+    .patient-info li
+    {
+        padding: 0em 0em;
+    }
+    .patient-icons li
+    {
+        padding: 0em 0em;
+    }
+    .important-info
+    {
+        width: 130%;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) 
+{
+    .navbar-nav .open .dropdown-menu>li>a {
+        color: white !important;
+        text-align: center;
+    }
+    .navbar-nav .open .dropdown-menu>li>a:hover {
+        background-color: #005580 !important;
+        color: white !important;
+    }
+    .navbar-form {
+        border:none;
+        width: 105%;
+        -webkit-box-shadow: inset 0 0px 0 rgba(255,255,255,.1), 0 0px 0 rgba(255,255,255,.1);
+        box-shadow: inset 0 0px 0 rgba(255,255,255,.1), 0 0px 0 rgba(255,255,255,.1);
+    }
+    .nav-input
+    {
+        width: 50% !important;
+        /* margin-left: 30% !important; */
+    }
+    .navbar-form .input-group 
+    {
+        margin-left: 33%;
+    }
+    .nav-btn
+    {
+       width: 50%;
+       margin-left: 27%;
+       font-size: 17px !important;
+    }
+    .information-label
+    {
+        width: 25%;
+    }
+    .info-input
+    {
+        width: 90%;
+    }
+    .tile-footer
+    {
+        width: 96%;
+    }
+    .patient-icons
+    {
+        margin-top: 3em;
+    }
+    .patient-info li
+    {
+        padding: 0em 5px;
+    }
+    .patient-icons li
+    {
+        padding: 0em 0em;
+    }
+    .patient-overview-btn
+    {
+        margin-top: 2em;
+    }
+    .cancel-btn
+    {
+        margin-top: 1em;
+    }
+    .important-info
+    {
+        width: 100%;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) 
+{
+    .tile-footer
+    {
+        width: 92%;
+    }
+    .patient-info li
+    {
+        padding-left: 0px !important;
+    }
+    .patient-icons li
+    {
+        padding-bottom: 5em;
+    }
+    .interaction-with
+    {
+        margin-top: 1em;
+    }
+    .assessment-save-btn
+    {
+        width: 130%;
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) 
+{
+
+}
+
+@media only screen and (min-width : 479px) 
+{
+}
+
+@media only screen and (min-width : 767px) 
+{
+}

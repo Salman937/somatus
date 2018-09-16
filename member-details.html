@@ -74,7 +74,7 @@
   <div class="panel panel-default panel-border">
     <div class="panel-body">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-12">
             <ul class="patient-info">
               <li>
                 <h5 style="color:#b5b3b3;">Patient Name</h5>
@@ -98,7 +98,7 @@
               </li>
             <ul> 
           </div>  
-          <div class="col-md-6">  
+          <div class="col-md-6 col-sm-12">  
             <ul class="patient-icons">
               <li>
                   <img src="assets/images/stethoscope copy.png" height="70" alt="">
@@ -128,11 +128,12 @@
     <button type="button" class="btn btn-default patient-pro patient-overview-btn" style="margin-left:-0.3em;border-top-left-radius: 0px;">Program Program</button>
     <div class="panel panel-default panel-border">
       <div class="panel-body">
-        <div id="patient-overview">
+        <div class="patient-overview">
           <button type="button" class="btn btn-primary add-program-btn"><i class="fas fa-plus-circle"></i> Add Program</button>
           <br><br>
-          <div style="height:300px;overflow: auto">
+          <div class="table-responsive" style="height:300px;overflow: auto">
             <table class="table">
+              
               <thead>
                 <tr class="active">
                   <th class="text-center">Date &nbsp;&nbsp;<span class="glyphicon glyphicon-triangle-bottom"></span></th>
@@ -210,9 +211,10 @@
                   </tr>
               </tbody>
             </table>
+           </div> 
           </div>
           <br>
-          <div class="row">
+          <div class="row patient-overview">
             <div class="col-md-12">
               <button type="button" class="btn btn-primary pagination-btn btn-sm" style="background-color:#a4b7c7;border:#a4b7c7"><i class="fas fa-angle-double-left"></i></button>  
               <button type="button" class="btn btn-primary pagination-btn btn-sm" style="background-color:#a4b7c7;border:#a4b7c7"><i class="fas fa-chevron-left"></i></button>&nbsp;&nbsp;  
@@ -238,7 +240,7 @@
 
       <div id="patient-program" style="display:none">
           <br><br>
-          <div style="height:300px;overflow: auto">
+          <div class="table-responsive" style="height:300px;overflow: auto">
             <table class="table">
               <thead>
                 <tr class="active">
@@ -346,14 +348,14 @@
 <script>
 $(document).ready(function(){
   $(".patient-view").click(function(){
-    $("#patient-overview").show();
+    $(".patient-overview").show();
         $("#patient-program").hide();
 
         $(".patient-pro").removeClass("patient-active");
         $(this).addClass("patient-active");
       });
       $(".patient-pro").click(function(){
-        $("#patient-overview").hide();
+        $(".patient-overview").hide();
         $("#patient-program").show();
 
         $(".patient-view").removeClass('patient-active');

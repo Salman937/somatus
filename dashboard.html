@@ -34,14 +34,14 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li style="border-left:1px solid #005580"><a href="#">My Tasks <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">My Tasks <span class="sr-only">(current)</span></a></li>
           <li><a href="#">Historical Tasks</a></li>
           <li><a href="#">Reports</a></li>
           <li><a href="#">Resources</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <form class="navbar-form navbar-left">
-            <div class="form-group">
+            <div class="form-group ">
                 <div class="input-group">
                   <div class="input-group-addon"><i class="fas fa-search" style="color:#b5b3b3"></i></div>
                     <input type="text" class="form-control nav-input" placeholder="Search">
@@ -74,11 +74,11 @@
         <form action="" class="form-horizontal">
           <div class="form-group">
           <div class="row" style="padding-left:1.1em">
-            <div class="col-sm-2" style="width:11%">
+            <div class="col-sm-2 information-label">
               <label for="exampleInputEmail2" style="color:#b5b3b3;font-size:17px;font-weight:100">Informatin for</label>
             </div>
             <div class="col-sm-4">
-            <select class="form-control">
+            <select class="form-control info-input">
                 <option>Jhon Smith</option>
               </select>
             </div>  
@@ -87,12 +87,12 @@
         </form>
         <br><br><br>
         <div class="row" style="padding: 0em 1.1em 0em 1.1em">
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
               <div class="tile">
-                  sdfs
-                                        </div>
+                  <div id="chartContainer" style="height: 12em; width: 100%;margin-top: -2em"></div>
+              </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
               <div class="tile text-center tasks">
                 <div class="row">
                   <div class="col-xs-6">
@@ -115,7 +115,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
               <div class="tile text-center patients">
                 <div class="row">
                     <div class="col-xs-6">
@@ -128,7 +128,7 @@
                   </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="tile text-center alert-patients">
                   <div class="row">
                       <div class="col-xs-6">
@@ -148,6 +148,7 @@
 
     <div class="panel panel-default panel-border">
       <div class="panel-body">
+        <div class="table-responsive">
           <table class="table">
             <thead>
               <tr class="active">
@@ -181,6 +182,7 @@
                 </tr>
             </tbody>
           </table>
+        </div>  
       </div>
     </div>
   </div>
@@ -194,5 +196,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   </body>
 </html>
+
+<script>
+  window.onload = function () {
+  
+  var chart = new CanvasJS.Chart("chartContainer", {
+    animationEnabled: true,
+    theme: "light2", // "light1", "light2", "dark1", "dark2"
+    
+    subtitles: [{
+      text: "",
+      fontSize: 16
+    }],
+    axisY: {
+      prefix: "",
+      scaleBreaks: {
+        customBreaks: [{
+          startValue: 10000,
+          endValue: 35000
+        }]
+      }
+    },
+    data: [{
+      type: "column",
+      yValueFormatString: "$#,##0.00",
+      dataPoints: [
+        { label: "Complex ESRD Care", y: 8123.181 },
+        { label: "Transitional", y: 3570.295 },
+        { label: "PCP", y: 1709.387 }	
+      ]
+    }]
+  });
+  chart.render();
+  
+  }
+  </script>
