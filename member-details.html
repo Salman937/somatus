@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Somatus</title>
+
+    <!-- Bootstrap -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>
+  <body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" alt="">
+        </a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li style="border-left:1px solid #005580"><a href="#">My Tasks <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Historical Tasks</a></li>
+          <li><a href="#">Reports</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-addon"><i class="fas fa-search" style="color:#b5b3b3"></i></div>
+                    <input type="text" class="form-control nav-input" placeholder="Search">
+                  </div>
+            </div>
+          </form>
+          <li><a href="#"><img src="assets/images/question.png" alt="" height="20"></a></li>
+          <li><a href="#" style="border-right: none"><img src="assets/images/settings.png" alt="" height="20"></a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle btn btn-default nav-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="assets/images/user-img.png" class="nav-img" alt="" height="30"> &nbsp;&nbsp;&nbsp;
+              Jhon Smith <span class="caret"></span> <p class="help-block help-text">Super Admin</p></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <ol class="breadcrumb">
+    <li><a href="#">My Task</a></li>
+    <li class="active"><a href="#">Patient Overview</a></li>
+  </ol>
+    
+<div class="container-fluid">
+  <div class="panel panel-default panel-border">
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-md-6">
+            <ul class="patient-info">
+              <li>
+                <h5 style="color:#b5b3b3;">Patient Name</h5>
+                <h3>Salman Iqbal</h3>
+              </li>
+              <li style="border-left: 1px solid gainsboro;">
+                  <h5 style="color:#b5b3b3;">Age</h5>
+                  <h3>26</h3>
+              </li>
+              <li style="border-left: 1px solid gainsboro;">
+                  <h5 style="color:#b5b3b3;">Gender</h5>
+                  <h3>Male</h3>
+              </li>
+              <li style="border-left: 1px solid gainsboro;">
+                  <h5 style="color:#b5b3b3;">Date of Brith</h5>
+                  <h3>26/04.2019</h3>
+              </li>
+              <li style="border-left: 1px solid gainsboro;">
+                  <h5 style="color:#b5b3b3;">Patient ID</h5>
+                  <h3>9808-0988</h3>
+              </li>
+            <ul> 
+          </div>  
+          <div class="col-md-6">  
+            <ul class="patient-icons">
+              <li>
+                  <img src="assets/images/stethoscope copy.png" height="70" alt="">
+              </li>
+              <li>
+                  <img src="assets/images/heart copy.png" height="70" alt="">
+              </li>
+              <li>
+                  <img src="assets/images/mortarboard copy.png" height="70" alt="">
+              </li>
+              <li>
+                  <img src="assets/images/home copy.png" height="70" alt="">
+              </li>
+              <li>
+                  <img src="assets/images/man copy.png" height="70" alt="">
+              </li>
+              <li>
+                  <img src="assets/images/three-dots-more-indicator copy.png" height="70" alt="">
+              </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-default patient-view patient-overview-btn patient-active" style="border-top-right-radius: 0px;">Patient Overview</button>
+    <button type="button" class="btn btn-default patient-pro patient-overview-btn" style="margin-left:-0.3em;border-top-left-radius: 0px;">Program Program</button>
+    <div class="panel panel-default panel-border">
+      <div class="panel-body">
+        <div id="patient-overview">
+          <button type="button" class="btn btn-primary add-program-btn"><i class="fas fa-plus-circle"></i> Add Program</button>
+          <br><br>
+          <div style="height:300px;overflow: auto">
+            <table class="table">
+              <thead>
+                <tr class="active">
+                  <th class="text-center">Date &nbsp;&nbsp;<span class="glyphicon glyphicon-triangle-bottom"></span></th>
+                  <th class="text-center">Activity &nbsp;&nbsp;<span class="glyphicon glyphicon-triangle-bottom"></span></th>
+                  <th class="text-center">Program Name &nbsp;&nbsp;<span class="glyphicon glyphicon-triangle-bottom"></span></th>
+                  <th class="text-center">Created By &nbsp;&nbsp;<span class="glyphicon glyphicon-triangle-bottom"></span></th>
+                  <th class="text-center">Activity Type &nbsp;&nbsp;<span class="glyphicon glyphicon-triangle-bottom"></span></th>
+                  <th class="text-center">Activity Status &nbsp;&nbsp;<span class="glyphicon glyphicon-triangle-bottom"></span></th>
+                  <th><span style="color:red"> Program Status</span> &nbsp;&nbsp;<span class="glyphicon glyphicon-triangle-bottom"></span></th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                  </tr>
+                <tr>
+                  <td>09/15/18</td>
+                  <td>Care Plan</td>
+                  <td>Complex ESRD Care</td>
+                  <td>Angle</td>
+                  <td>Care Plan</td>
+                  <td>Completed</td>
+                  <td>Care Planning</td>
+                </tr>
+                <tr>
+                  <td>09/15/18</td>
+                  <td>Care Plan</td>
+                  <td>Complex ESRD Care</td>
+                  <td>Angle</td>
+                  <td>Care Plan</td>
+                  <td>Completed</td>
+                  <td>Care Planning</td>
+                </tr>
+                <tr>
+                  <td>09/15/18</td>
+                  <td>Care Plan</td>
+                  <td>Complex ESRD Care</td>
+                  <td>Angle</td>
+                  <td>Care Plan</td>
+                  <td>Completed</td>
+                  <td>Care Planning</td>
+                </tr>
+                <tr>
+                  <td>09/15/18</td>
+                  <td>Care Plan</td>
+                  <td>Complex ESRD Care</td>
+                  <td>Angle</td>
+                  <td>Care Plan</td>
+                  <td>Completed</td>
+                  <td>Care Planning</td>
+                </tr>
+                <tr>
+                  <td>09/15/18</td>
+                  <td>Care Plan</td>
+                  <td>Complex ESRD Care</td>
+                  <td>Angle</td>
+                  <td>Care Plan</td>
+                  <td>Completed</td>
+                  <td>Care Planning</td>
+                </tr>
+                <tr>
+                    <td>09/15/18</td>
+                    <td>Care Plan</td>
+                    <td>Complex ESRD Care</td>
+                    <td>Angle</td>
+                    <td>Care Plan</td>
+                    <td>Completed</td>
+                    <td>Care Planning</td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-12">
+              <button type="button" class="btn btn-primary pagination-btn btn-sm" style="background-color:#a4b7c7;border:#a4b7c7"><i class="fas fa-angle-double-left"></i></button>  
+              <button type="button" class="btn btn-primary pagination-btn btn-sm" style="background-color:#a4b7c7;border:#a4b7c7"><i class="fas fa-chevron-left"></i></button>&nbsp;&nbsp;  
+
+              Page <input type="text" value="1" class="text-center" style="width:3%">
+              of 10
+
+              <button type="button" class="btn btn-primary pagination-btn btn-sm"><i class="fas fa-chevron-right"></i></button>  
+              <button type="button" class="btn btn-primary pagination-btn btn-sm"><i class="fas fa-angle-double-right"></i></button>
+              <button type="button" class="btn btn-primary pagination-btn btn-sm"><i class="fas fa-sync-alt"></i></button>
+              <button type="button" class="btn btn-primary pagination-btn btn-sm"><i class="fas fa-sync-alt"></i></button>
+              <button type="button" class="btn btn-primary pagination-btn btn-sm">
+                50 <i class="fas fa-sort-up"></i>
+              </button>
+
+              <span class="pull-right">
+                Displaying 1-50 of 500 Records
+              </span>
+
+            </div> 
+          </div>
+      </div>
+
+      <div id="patient-program" style="display:none">
+          <br><br>
+          <div style="height:300px;overflow: auto">
+            <table class="table">
+              <thead>
+                <tr class="active">
+                  <th class="text-center">Program Name &nbsp;&nbsp;<span class="glyphicon glyphicon-triangle-bottom"></span></th>
+                  <th class="text-center">Primary Staff &nbsp;&nbsp;<span class="glyphicon glyphicon-triangle-bottom"></span></th>
+                  <th class="text-center">Start Date &nbsp;&nbsp;<span class="glyphicon glyphicon-triangle-bottom"></span></th>
+                  <th class="text-center">End Date &nbsp;&nbsp;<span class="glyphicon glyphicon-triangle-bottom"></span></th>
+                  <th><span style="color:red"> Program Status</span> &nbsp;&nbsp;<span class="glyphicon glyphicon-triangle-bottom"></span></th>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                  </tr>
+                <tr>
+                  <td>09/15/18</td>
+                  <td>Care Plan</td>
+                  <td>Complex ESRD Care</td>
+                  <td>Angle</td>
+                  <td>Care Plan</td>
+                </tr>
+                <tr>
+                  <td>09/15/18</td>
+                  <td>Care Plan</td>
+                  <td>Complex ESRD Care</td>
+                  <td>Angle</td>
+                  <td>Care Plan</td>
+                </tr>
+                <tr>
+                  <td>09/15/18</td>
+                  <td>Care Plan</td>
+                  <td>Complex ESRD Care</td>
+                  <td>Angle</td>
+                  <td>Care Plan</td>
+                </tr>
+                <tr>
+                  <td>09/15/18</td>
+                  <td>Care Plan</td>
+                  <td>Complex ESRD Care</td>
+                  <td>Angle</td>
+                  <td>Care Plan</td>
+                </tr>
+                <tr>
+                  <td>09/15/18</td>
+                  <td>Care Plan</td>
+                  <td>Complex ESRD Care</td>
+                  <td>Angle</td>
+                  <td>Care Plan</td>
+                </tr>
+                <tr>
+                    <td>09/15/18</td>
+                    <td>Care Plan</td>
+                    <td>Complex ESRD Care</td>
+                    <td>Angle</td>
+                    <td>Care Plan</td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-12">
+              <button type="button" class="btn btn-primary pagination-btn btn-sm" style="background-color:#a4b7c7;border:#a4b7c7"><i class="fas fa-angle-double-left"></i></button>  
+              <button type="button" class="btn btn-primary pagination-btn btn-sm" style="background-color:#a4b7c7;border:#a4b7c7"><i class="fas fa-chevron-left"></i></button>&nbsp;&nbsp;  
+
+              Page <input type="text" value="1" class="text-center" style="width:3%">
+              of 10
+
+              <button type="button" class="btn btn-primary pagination-btn btn-sm"><i class="fas fa-chevron-right"></i></button>  
+              <button type="button" class="btn btn-primary pagination-btn btn-sm"><i class="fas fa-angle-double-right"></i></button>
+              <button type="button" class="btn btn-primary pagination-btn btn-sm"><i class="fas fa-sync-alt"></i></button>
+              <button type="button" class="btn btn-primary pagination-btn btn-sm"><i class="fas fa-sync-alt"></i></button>
+              <button type="button" class="btn btn-primary pagination-btn btn-sm">
+                50 <i class="fas fa-sort-up"></i>
+              </button>
+
+              <span class="pull-right">
+                Displaying 1-50 of 500 Records
+              </span>
+
+            </div> 
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center">
+    Copyright Somatus, Inc. 2018
+  </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+<script>
+$(document).ready(function(){
+  $(".patient-view").click(function(){
+    $("#patient-overview").show();
+        $("#patient-program").hide();
+
+        $(".patient-pro").removeClass("patient-active");
+        $(this).addClass("patient-active");
+      });
+      $(".patient-pro").click(function(){
+        $("#patient-overview").hide();
+        $("#patient-program").show();
+
+        $(".patient-view").removeClass('patient-active');
+        $(this).addClass("patient-active");
+    });
+});
+</script>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Somatus</title>
+
+    <!-- Bootstrap -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- Include Editor style. -->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.5/css/froala_editor.min.css' rel='stylesheet' type='text/css' />
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.5/css/froala_style.min.css' rel='stylesheet' type='text/css' />
+  </head>
+  <body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" alt="">
+        </a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li style="border-left:1px solid #005580"><a href="#">My Tasks <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Historical Tasks</a></li>
+          <li><a href="#">Reports</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-addon"><i class="fas fa-search" style="color:#b5b3b3"></i></div>
+                    <input type="text" class="form-control nav-input" placeholder="Search">
+                  </div>
+            </div>
+          </form>
+          <li><a href="#"><img src="assets/images/question.png" alt="" height="20"></a></li>
+          <li><a href="#" style="border-right: none"><img src="assets/images/settings.png" alt="" height="20"></a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle btn btn-default nav-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="assets/images/user-img.png" class="nav-img" alt="" height="30"> &nbsp;&nbsp;&nbsp;
+              Jhon Smith <span class="caret"></span> <p class="help-block help-text">Super Admin</p></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+    
+<div class="container-fluid">
+    <div class="panel panel-default panel-border">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Communications</h2>
+          </div> 
+          <div class="col-md-6">
+              <h5 class="pull-right"> <span style="color:#b5b3b3;"> Related To:</span> <b>Complex ESRD Program</b></h5>
+          </div> 
+        </div>
+        
+        <div class="row" style="margin-top:2em">
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-3">
+                <label style="color:#b5b3b3;">Cummunication Type:</label>
+              </div>
+              <div class="col-md-9">  
+                <select class="form-control">
+                  <option>Outreach Letter</option>
+                </select>
+              </div>  
+            </div> 
+          </div>
+
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-3">
+                <label style="color:#b5b3b3;">Template:</label>
+              </div>
+              <div class="col-md-9">  
+                <select class="form-control">
+                  <option>Select</option>
+                </select>
+              </div>  
+            </div> 
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:2em">
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-md-3">
+                  <label style="color:#b5b3b3;">Recipient:</label>
+                </div>
+                <div class="col-md-9">  
+                  <select class="form-control">
+                    <option>jhon Smith
+                  </select>
+                </div>  
+              </div> 
+            </div>
+          </div>
+          <br>
+          <label>Notes:</label>
+          <!-- <textarea class="form-control" rows="10"></textarea> -->
+          <textarea id="froala-editor">Initialize the Froala WYSIWYG HTML Editor on a textarea.</textarea>
+      </div>
+      <div class="row">
+        <div class="col-md-3 text-muted created-by">
+          <h5>Created by Angles on 06/09/18</h5>
+        </div>
+        <div class="col-md-1 col-md-offset-5">
+          <button class="btn btn-default assessment-save-btn save-active">
+            Generate
+          </button>
+        </div>
+        <div class="col-md-1">  
+          <button class="btn btn-default assessment-save-btn">
+            Submit
+          </button>
+        </div>  
+        <div class="col-md-1">
+          <button class="btn btn-default assessment-save-btn">
+            Cancel
+          </button>
+        </div>  
+      </div>   
+      <br> 
+    </div>
+
+  </div>
+
+  <footer class="text-center">
+    Copyright Somatus, Inc. 2018
+  </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Include JS file. -->
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.5/js/froala_editor.min.js'></script>
+  </body>
+</html>
+
+<script>
+  $(function() {
+    $('textarea#froala-editor').froalaEditor()
+  });
+</script>
