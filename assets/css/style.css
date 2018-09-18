@@ -104,8 +104,12 @@ body
     color: #4e4949;
     background-color: #eaeaea;
     width: 90.8%;
-    margin:8.1em 0em 0em 1.1em;
+    margin:8.1em 0em 0em 4.5%;
     padding-top: 0.3em;
+}
+.tile h5
+{
+    margin-top: -2.9em
 }
 footer
 {
@@ -209,4 +213,8 @@ footer
       padding-left: 2em;
       float:right;
   }
-
+  .extra-menu
+  {
+    left: 30em;
+    background-color: #d6d6d6;
+  }

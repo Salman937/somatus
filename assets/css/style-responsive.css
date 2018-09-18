@@ -29,8 +29,13 @@
     } 
     .tile-footer
     {
-        width: 89%;
-    }       
+        width: 89.6%;
+        margin:8.1em 0em 0em 5%;
+    }   
+    .extra-menu
+    {
+        left: 0em;
+    }    
 }
 
 /* Medium Devices, Desktops */
@@ -128,16 +133,21 @@
         width: 18%;
     } 
     .patients
-    {
+    {                                                                                           
         margin-top: 2em;
     }
     .alert-patients
     {
-        margin-top: 2em;
+        margin-top: 0em;
     }
     .tile-footer
     {
         width: 93.5%;
+        margin:8.1em 0em 0em 3.3%;
+    }
+    .tile h5
+    {
+        margin-top: 0em
     }
     .patient-info
     {
@@ -159,6 +169,10 @@
     .important-info
     {
         width: 130%;
+    }
+    .extra-menu
+    {
+        left: 40em;
     }
 }
 
@@ -204,7 +218,12 @@
     }
     .tile-footer
     {
-        width: 96%;
+        width: 95.8%;
+        margin:8.1em 0em 0em 2.1%;
+    }
+    .tasks
+    {
+        margin-top: 1em;
     }
     .patient-icons
     {
@@ -230,6 +249,11 @@
     {
         width: 100%;
     }
+    .extra-menu
+    {
+        left: 32em;
+        margin-top: 1em;
+    }
 }
 
 /* Extra Small Devices, Phones */ 
@@ -238,6 +262,7 @@
     .tile-footer
     {
         width: 92%;
+        margin:8.1em 0em 0em 4%;
     }
     .patient-info li
     {
@@ -254,6 +279,14 @@
     .assessment-save-btn
     {
         width: 130%;
+    }
+    .alert-patients {
+        margin-top: -3em;
+    }
+    .extra-menu
+    {
+        left: 11em;
+        margin-top: 1em;
     }
 }
 

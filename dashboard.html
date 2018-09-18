@@ -34,7 +34,7 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="#">My Tasks <span class="sr-only">(current)</span></a></li>
+          <li class="active"><a href="#">My Tasks <span class="sr-only">(current)</span></a></li>
           <li><a href="#">Historical Tasks</a></li>
           <li><a href="#">Reports</a></li>
           <li><a href="#">Resources</a></li>
@@ -52,7 +52,7 @@
           <li><a href="#" style="border-right: none"><img src="assets/images/settings.png" alt="" height="20"></a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle btn btn-default nav-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="assets/images/user-img.png" class="nav-img" alt="" height="30"> &nbsp;&nbsp;&nbsp;
-              Jhon Smith <span class="caret"></span> <p class="help-block help-text">Super Admin</p></a>
+              John Smith <span class="caret"></span> <p class="help-block help-text">Super Admin</p></a>
             <ul class="dropdown-menu">
               <li><a href="#">Action</a></li>
               <li><a href="#">Another action</a></li>
@@ -79,7 +79,7 @@
             </div>
             <div class="col-sm-4">
             <select class="form-control info-input">
-                <option>Jhon Smith</option>
+                <option>John Smith</option>
               </select>
             </div>  
             <!-- <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com"> -->
@@ -88,9 +88,17 @@
         <br><br><br>
         <div class="row" style="padding: 0em 1.1em 0em 1.1em">
           <div class="col-md-3 col-sm-6">
-              <div class="tile">
-                  <div id="chartContainer" style="height: 12em; width: 100%;margin-top: -2em"></div>
+            <div class="tile text-center alert-patients">
+              <div class="row">
+                <div class="col-xs-6">
+                  <h1><i class="fas fa-bell fa-2x"></i></h1>
+                </div>
+                <div class="col-xs-5">
+                  <h1><b>60</b></h1>
+                  <h4>Patients with Alert</h4>
+                </div>
               </div>
+            </div>
           </div>
           <div class="col-md-3 col-sm-6">
               <div class="tile text-center tasks">
@@ -129,19 +137,13 @@
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
-                <div class="tile text-center alert-patients">
-                  <div class="row">
-                      <div class="col-xs-6">
-                        <h1><i class="fas fa-bell fa-2x"></i></h1>
-                      </div>
-                      <div class="col-xs-5">
-                        <h1><b>60</b></h1>
-                        <h4>Patients with Alert</h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="tile">
+                <h5 style="color:black">My Active Patients by Program and Program Status</h5>
+                <br>
+                <div id="chartContainer" style="height: 12em; width: 100%;margin-top: -2em"></div>
+              </div>
             </div>
+          </div>
         </div>
       </div>
     </div>
@@ -166,19 +168,19 @@
                 <td>Initial Assignment</td>
                 <td>9-12-9887</td>
                 <td>0980-9098</td>
-                <td>Jhon Smith</td>
-                <td>Complex ESRD Care</td>
-                <td>Dr.Ramon Mendex</td>
-                <td>Dr.Wendy Jones</td>
+                <td> <a href="#">Jhon Smith</a></td>
+                <td> <a href="#">Complex ESRD Care</a></td>
+                <td>Ramon Mendex M.D</td>
+                <td>Wendy Jones</td>
               </tr>
               <tr>
                   <td>Home Visit</td>
                   <td>9-12-9887</td>
                   <td>0989-8989</td>
-                  <td>Salman Iqbal</td>
-                  <td>Transitional Care</td>
-                  <td>Dr.Joe Jones</td>
-                  <td>Dr.Sam Shen</td>
+                  <td><a href="#">Salman Iqbal M.D</a></td>
+                  <td><a href="#">Transitional Care D.O</a></td>
+                  <td>Joe Jones</td>
+                  <td>Sam Shen</td>
                 </tr>
             </tbody>
           </table>
@@ -226,8 +228,8 @@
       yValueFormatString: "$#,##0.00",
       dataPoints: [
         { label: "Complex ESRD Care", y: 8123.181 },
-        { label: "Transitional", y: 3570.295 },
-        { label: "PCP", y: 1709.387 }	
+        { label: "Transitional Care", y: 3570.295 },
+        { label: "Wellness Care", y: 1709.387 }	
       ]
     }]
   });
